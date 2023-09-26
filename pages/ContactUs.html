@@ -41,7 +41,25 @@
   <!-- <link href="css/responsive.css" rel="stylesheet" /> -->
   <link href="../assets/css/responsive_homepage.css" rel="stylesheet" />
 
-
+  <style>
+    .google-maps {
+     position: relative;
+     padding-bottom: 45%;
+     
+     /* // This is the aspect ratio */
+     height: 0;
+     overflow: hidden;
+    }
+    .google-maps iframe {
+      
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     width: 100% !important;
+     height: 95% !important;
+    }
+  </style>
 
 
 </head>
@@ -115,25 +133,23 @@
   <!-- contact us -->
   <section class="contact_section layout_padding">
     <div class="container">
-      <div class="row">
-        <div class="col-md-3">
+      <div class="row col-md-3">       
           <div class="infor_contact">
             <h6>Address </h6>
             <h6>Phone: +01 1234567890 </h6>
             <a href="mailto:abc@example.com">abc@gmail.com</a>
-          </div>
-        </div>
-        <div class="">
-
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.5844148798615!2d106.7093967760473!3d10.843081657958695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752d33d4a21d21%3A0x6efb856cd8d033af!2sVAN%20PHUC%20CITY!5e0!3m2!1svi!2s!4v1694867319100!5m2!1svi!2s"
-            width="1200" height="700" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        </div>
+          </div>  
       </div>
     </div>
   </section>
+
+  <div class="google-maps">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.5844148798615!2d106.7093967760473!3d10.843081657958695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752d33d4a21d21%3A0x6efb856cd8d033af!2sVAN%20PHUC%20CITY!5e0!3m2!1svi!2s!4v1694867319100!5m2!1svi!2s"
+       style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </div>
 
 
   <!-- end contact us -->
